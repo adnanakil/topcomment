@@ -1,0 +1,46 @@
+<!doctype html>
+<title>Top Comments</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<h1>Top Comments</h1>
+
+
+<!-- <img src="http://placekitten.com/g/200/300"></img> -->
+
+
+
+<ul>
+  {%for a, b, c in zipped%}
+  <li><h4><a href="{{ c }}">{{ a }}</a></h4></li>
+  <li><h2 class="comment">{{ b }}</h2></li>
+  {% endfor %}
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<form action="{{ url_for('add_entry') }}" method=post class=add-entry>
+  <dl>
+    <dt>Text:
+    <dd><input type=text size=30 name=puntext>
+    <dd><input type=submit value=Share>
+  </dl>
+</form>
+ -->
+  <!-- <ul class=entries>
+  {% for entry in entries %}
+    <li><h2>{{ entry.puntext }}</h2>  NOT SURE WHY .PUNTEXT WORKS
+  {% else %}
+    <li><em>Unbelievable.  No entries here so far</em>
+  {% endfor %}
+  </ul>
+ -->
+
