@@ -1,1 +1,1 @@
-web: gunicorn app:paulspuns.py
+web: gunicorn paulspuns:app --log-file=-
