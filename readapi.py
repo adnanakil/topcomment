@@ -1,5 +1,4 @@
 import requests
-from PIL import Image
 from StringIO import StringIO
 import praw
 import sys  
