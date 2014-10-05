@@ -1,10 +1,11 @@
-body            { font-family: sans-serif; background: #eee; }
-a, h1, h2       { color: #377ba8; }
+body            { font-family: sans-serif; }
+a, h1, h2       { color: #377AED; text-decoration: none }
 h1, h2          { font-family: 'Georgia', serif; margin: 0; }
 h1              { border-bottom: 2px solid #eee; }
 h2              { font-size: 1.2em; }
 h4				{ font-size: 1.6em; }
-ul				{ list-style-type: none; }
+ul				{ list-style-type: none;}
+header 			{ background: #fce35c; height: 5px; color: black; font-family: helvetica; margin-top: -8px;}
 
 .page           { margin: 2em auto; width: 35em; border: 5px solid #ccc;
                   padding: 0.8em; background: white; }
@@ -18,4 +19,7 @@ ul				{ list-style-type: none; }
 .flash          { background: #cee5F5; padding: 0.5em;
                   border: 1px solid #aacbe2; }
 .error          { background: #f0d6d6; padding: 0.5em; }
-.comment		{ margin-left: 40px; margin-top: 5px; color:black; }
+.comment		{ margin-left: 40px; margin-top: -20px; color:black; font-family: 'helvetica-neue' }
+div.commentlist 		{width: 50%;}
+.titlelink		{ width: 70%;}
+.maintitle		{color: black;}

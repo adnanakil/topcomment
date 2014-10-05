@@ -12,7 +12,8 @@ r = praw.Reddit(user_agent=user_agent)
 
 
 def story():
-	submissions = list(r.get_subreddit('news').get_top(limit=5))
+	s_reddit = 'news'
+	submissions = list(r.get_subreddit(s_reddit).get_top(limit=5))
 	stories = [str(story.title) for story in submissions]
 	top_comment = [x.comments[0].body for x in submissions]
 	links = [link.url for link in submissions]
@@ -20,26 +21,11 @@ def story():
 	return zipper
 
 
-# x = topcomment()
-# print "i'm here!"
-# print x[0]
 
 
 
-
-# try:
-# 	submission = next(submissions).comments
-# 	comments = []
-# 	comments = [str(x) for x in submission]
-# 	print comments[0]	
-# except:
-# 	print "excepted!"
-
-# for value in submissions:
-#      top_comment = value.comments[0]
-#      print top_comment
-
-# >Anyone who has ever been to jail before knows this idea that they try to get
-# >**Objective-Truth**: While a state senator, Senator Shitbag did not vote yes
-
-# top_comment = [value.comments for value in submissions]
+def top_hn():
+	r = requests.get('http://api.ihackernews.com/page')
+	top_hn = r.json()
+	hn_title = str(top_hn['items'][0].get('title'))
+	hn_url = str(top_hn['items'][0].get('url'))
