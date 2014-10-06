@@ -19,7 +19,11 @@ header 			{ background: #fce35c; height: 5px; color: black; font-family: helveti
 .flash          { background: #cee5F5; padding: 0.5em;
                   border: 1px solid #aacbe2; }
 .error          { background: #f0d6d6; padding: 0.5em; }
-.comment		{ margin-left: 40px; margin-top: -20px; color:black; font-family: 'helvetica-neue' }
-div.commentlist 		{width: 50%;}
-.titlelink		{ width: 70%;}
+.comment		{ margin-left: 40px; margin-top: -20px; color: rgb(51,51,51); font-family: 'Merriweather Sans', sans-serif; font-weight: 300; }
+div.commentlist 		{width: 65%;}
+.titlelink		{ width: 100%; font-size: 135%; font-family: 'Merriweather Sans', sans-serif; font-weight: 700;}
 .maintitle		{color: black;}
+div.totallist	{width: 70%; min-width: 480px;}
+li.red 			{border-left: 2px solid rgba(206, 24, 54, 1);}
+li.green 		{border-left: 2px solid rgba(0, 153, 137, 1);}
+li.yellow		{border-left: 2px solid rgba(237, 185, 46, 1);}

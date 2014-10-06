@@ -1,4 +1,6 @@
 <!doctype html>
+<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,300' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 <title>NEWS</title>
 
 
@@ -32,20 +34,18 @@
 
 <!-- <img src="http://placekitten.com/g/200/300"></img> -->
 
-
+<div class="totallist">
 <ul>
   {%for a, b, c in zipped%}
-  <li><h4 class="titlelink"><a href="{{ c }}">{{ a }}</a></h4></li>
+  <li ><h4 class="titlelink"><a href="{{ c }}">{{ a }}</a></h4></li>
   <div class="commentlist">
-  <li><h2 class="comment">{{ b }}</h2></li>
+  <li class="{{ loop.cycle('red', 'green', 'yellow') }}"><h2 class="comment">{{ b }}</h2></li>
   </div>
   {% endfor %}
 </ul>
-
+</div>
 
 {% endblock %}
-
-
 
 
 
