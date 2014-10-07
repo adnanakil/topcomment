@@ -2,7 +2,7 @@ body            { font-family: sans-serif; }
 a, h1, h2       { color: #377AED; text-decoration: none }
 h1, h2          { font-family: 'Georgia', serif; margin: 0; }
 h1              { border-bottom: 2px solid #eee; }
-h2              { font-size: 1.2em; }
+h2              {  }
 h4				{ font-size: 1.6em; }
 ul				{ list-style-type: none;}
 header 			{ background: #fce35c; height: 5px; color: black; font-family: helvetica; margin-top: -8px;}
@@ -19,11 +19,11 @@ header 			{ background: #fce35c; height: 5px; color: black; font-family: helveti
 .flash          { background: #cee5F5; padding: 0.5em;
                   border: 1px solid #aacbe2; }
 .error          { background: #f0d6d6; padding: 0.5em; }
-.comment		{ margin-left: 40px; margin-top: -20px; color: rgb(51,51,51); font-family: 'Merriweather Sans', sans-serif; font-weight: 300; }
-div.commentlist 		{width: 65%;}
-.titlelink		{ width: 100%; font-size: 135%; font-family: 'Merriweather Sans', sans-serif; font-weight: 700;}
+.comment		{ margin-left: 40px; margin-top: -20px; color: rgb(51,51,51); font-family: 'Merriweather Sans', sans-serif; font-weight: 200; letter-spacing: 0.01rem; font-style: normal; font-size: 14px; line-height: 1.5; }
+div.commentlist 		{width: 75%;}
+.titlelink		{ width: 85%; font-size: 135%; font-family: 'Merriweather Sans', sans-serif; font-weight: 700;}
 .maintitle		{color: black;}
-div.totallist	{width: 70%; min-width: 480px;}
-li.red 			{border-left: 2px solid rgba(206, 24, 54, 1);}
-li.green 		{border-left: 2px solid rgba(0, 153, 137, 1);}
-li.yellow		{border-left: 2px solid rgba(237, 185, 46, 1);}
+div.totallist	{width: 70%; min-width: 480px; margin-left: auto; margin-right: auto;}
+li.red 			{border-left: 2px solid rgba(206, 24, 54, 0.5);}
+li.green 		{border-left: 2px solid rgba(0, 153, 137, 0.5);}
+li.yellow		{border-left: 2px solid rgba(237, 185, 46, 0.5);}
