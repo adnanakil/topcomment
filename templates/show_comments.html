@@ -1,4 +1,16 @@
 <!doctype html>
+
+<script>
+(function(){
+    var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
+})("woopra");
+
+woopra.config({
+    domain: "topcomment.io"
+});
+woopra.track();
+</script>
+
 <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,300' rel='stylesheet' type='text/css'>
 <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -31,6 +43,7 @@
 
 
 {% block navbar %}
+<div class="loading-bar"></div>
 <div class="navbar navbar-fixed-top">
   <!-- ... -->
 </div>
@@ -56,7 +69,7 @@
   <li ><h4 class="titlelink"><a href="{{ c }}">{{ a }}</a></h4></li>
   <div class="commentlist">
   <li class="{{ loop.cycle('red', 'green', 'yellow') }}"><h2 class="comment">{{ b }}</h2></li>
-  </div>  
+  </div>
   {% endfor %}
 </ul>
 </div>
@@ -87,3 +100,15 @@
   </ul>
  -->
 
+
+<script type="text/javascript">
+$(function()
+{
+    $("body").addClass("app-loading");
+    //$.get("some-test-page.html", function(data)
+    //{
+    //    $("body").removeClass("app-loading");
+    //});
+})
+</script>
+  

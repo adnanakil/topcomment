@@ -45,6 +45,8 @@ def close_db(error):
     if hasattr(g, 'sqlite_db'):
         g.sqlite_db.close()
 
+
+
 @app.route('/')
 def show_puns():
 	zipped = readapi.story()
