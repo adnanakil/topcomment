@@ -5,8 +5,6 @@
 <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,300' rel='stylesheet' type='text/css'>
 <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="{{
-  url_for('static', filename='jquery.js') }}">\x3C/script>')</script>
 
 <script>
 (function(){
@@ -49,7 +47,7 @@ woopra.track();
 </div>
 
 
-<h1 class="maintitle">Paul's News</h1>
+<h1 class="maintitle">Saul's News</h1>
 
 
 <!-- <img src="http://placekitten.com/g/200/300"></img> -->
@@ -66,40 +64,3 @@ woopra.track();
 </div>
 
 {% endblock %}
-
-
-
-
-
-
-
-<!-- 
-<form action="{{ url_for('add_entry') }}" method=post class=add-entry>
-  <dl>
-    <dt>Text:
-    <dd><input type=text size=30 name=puntext>
-    <dd><input type=submit value=Share>
-  </dl>
-</form>
- -->
-  <!-- <ul class=entries>
-  {% for entry in entries %}
-    <li><h2>{{ entry.puntext }}</h2>  NOT SURE WHY .PUNTEXT WORKS
-  {% else %}
-    <li><em>Unbelievable.  No entries here so far</em>
-  {% endfor %}
-  </ul>
- -->
-
-
-<script type="text/javascript">
-$(function()
-{
-    $("body").addClass("app-loading");
-    //$.get("some-test-page.html", function(data)
-    //{
-    //    $("body").removeClass("app-loading");
-    //});
-})
-</script>
-  
